@@ -1,0 +1,2 @@
+# blog
+EJS blog
