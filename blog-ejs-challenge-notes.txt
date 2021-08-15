@@ -1,0 +1,29 @@
+git ignore node modules
+spec in package.json
+
+intall node_modules
+run npm in hyper to add node_modules *do if download sample project off
+
+Complete Challenge One:
+
+goto: localhost
+
+render home page, h1 that says home
+
+solution to challenge one: add h2, app.get and homepath. 
+
+CHALLENGE TWO:
+add content from server to homepage
+to render or pass data from server (app.js) to page, res.render(home, {key:value}); 
+pass jsobject to home.ejs
+
+CHALLENGE THREE:
+use ejs templates and tags for header and footer
+
+CHALLENGE FOUR:
+add partials subdirector in views
+update paths
+
+Challenge FIVE:
+redirect and render other pages and a pass data and render data
+
