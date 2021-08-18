@@ -27,3 +27,11 @@ update paths
 Challenge FIVE:
 redirect and render other pages and a pass data and render data
 
+Challenge SIX:
+link menu items
+add app.get
+
+Challenge Seven:
+build compose.ejs add: h1 title, text input, publish
+
+
