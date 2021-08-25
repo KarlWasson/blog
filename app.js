@@ -14,6 +14,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.json());
 app.use(express.static("public"));
 
 app.get('/', function(req, res){
@@ -32,6 +33,11 @@ app.get("/listings", function(req, res){
 });
 app.get("/compose", function(req, res){
   res.render("compose")
+});
+
+app.post("/compose", function(req, res){
+  let postText = req.body.testCompose;
+  console.log("Test Post Text: " + postText);
 });
 
 

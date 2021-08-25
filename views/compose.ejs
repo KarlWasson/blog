@@ -1,9 +1,8 @@
 <%- include('partials/header'); -%>
-<h2>Compose</h2>
-<form>
-  <div>
-    <input type="text" id="compose" name="compose">
-      <button>Publish</button>
-  </div>
+<h1>Compose</h1>
+<form class="compose" action="/compose" method="post">
+    <input type="text" id="compose" name="testCompose">
+    <button type="submit" name="button">Publish</button>
+
 </form>
 <%- include('partials/footer'); -%>

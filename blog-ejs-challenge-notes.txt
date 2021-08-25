@@ -34,4 +34,10 @@ add app.get
 Challenge Seven:
 build compose.ejs add: h1 title, text input, publish
 
+Challenge 8:
+console log data from text input
 
+first create a varaiable in the app.post method (route?)
+req.body.className
+
+make sure you have <form name="" method="post">
