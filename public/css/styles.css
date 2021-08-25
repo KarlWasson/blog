@@ -14,7 +14,11 @@
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
-
+/* compose style */
+/* .submitButton {
+background-color: blue;
+text: white;
+} */
 .footer-padding {
 	padding-bottom: 60px;
 }

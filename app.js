@@ -36,8 +36,10 @@ app.get("/compose", function(req, res){
 });
 
 app.post("/compose", function(req, res){
-  let composeText = req.body.testCompose;
-  console.log("Test Post Text: " + composeText);
+  let postTitleTxt = req.body.composeTitle;
+  let postBodyTxt = req.body.composeBody;
+  console.log("Post title: " + postTitleTxt + "Post body: " + postBodyTxt);
+
 });
 
 

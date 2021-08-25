@@ -41,3 +41,8 @@ first create a varaiable in the app.post method (route?)
 req.body.className
 
 make sure you have <form name="" method="post">
+
+Challenge 9:
+Add title txt box
+add post text box
+
