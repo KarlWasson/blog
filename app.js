@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get('/', function(req, res){
-  console.log("Posts: " + posts.length);
+  console.log("Post Title: " + posts );
   res.render("home", {homeStartingContent: homeStartingContent});
 });
 // add get for menu items
