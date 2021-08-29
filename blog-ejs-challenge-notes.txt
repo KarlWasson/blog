@@ -58,3 +58,6 @@ at the end of the route redirect to the root route and log post array
 
 Challenge 12:
 pass posts object to home route
+
+Challenge 13:
+Log titles in home route
