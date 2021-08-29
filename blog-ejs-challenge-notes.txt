@@ -51,3 +51,6 @@ Create javascript object called post that stores postBody and postTitle
 Create new jsobject
 made a new variable called post, add fields, Object.create, 
 
+Challenge 11:
+put post object inside a global variable called posts, it's an array
+
