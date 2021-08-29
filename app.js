@@ -39,12 +39,12 @@ app.post("/compose", function(req, res){
   let postTitleTxt = req.body.composeTitle;
   let postBodyTxt = req.body.composeBody;
 //  console.log("Post title: " + postTitleTxt + "Post body: " + postBodyTxt);
-  const post ={
-    postTitleTxt: postTitleTxt,
-    postBodyTxt: postBodyTxt
+  var post ={
+    title: postTitleTxt,
+    content: postBodyTxt
   };
   Object.create(post);
-  console.log("Post text: " + post.postTitleTxt + " " + "Post body: " + post.postBodyTxt);
+  console.log("Post text: " + post.title + " " + "Post body: " + post.content);
 });
 
 app.listen(3000, function() {
