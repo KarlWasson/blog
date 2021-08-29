@@ -1,7 +1,9 @@
 <%- include('partials/header'); -%>
 <h2>Home</h2>
 <p><%= homeStartingContent %></p>
-
-<% console.log("Post Data Home Route ", JSON.stringify(posts)) %>
-
+<% console.log("Post Data Home Route ", posts) %>
+<% for(let i = 0; posts.length > i; i++) { %>
+   <% let title = posts[i].title %>
+   <% console.log("Title " + title); %>
+ <% }; %>
 <%- include('partials/footer'); -%>
