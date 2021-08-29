@@ -12,7 +12,7 @@ const homeStartingContent = "Lacus vel facilisis volutpat est velit egestas dui 
 const app = express();
 
 // a list of posts
-const posts = [];
+let posts = [];
 
 app.set('view engine', 'ejs');
 
@@ -21,8 +21,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get('/', function(req, res){
-  console.log("Post Title: " + posts );
-  res.render("home", {homeStartingContent: homeStartingContent});
+  res.render("home", {homeStartingContent: homeStartingContent, posts: posts});
 });
 // add get for menu items
 app.get("/about", function(req, res){
@@ -40,14 +39,11 @@ app.get("/compose", function(req, res){
 });
 
 app.post("/compose", function(req, res){
-  let postTitleTxt = req.body.composeTitle;
-  let postBodyTxt = req.body.composeBody;
-//  console.log("Post title: " + postTitleTxt + "Post body: " + postBodyTxt);
   const post ={
-    title: postTitleTxt,
-    content: postBodyTxt
+    title: req.body.composeTitle,
+    content: req.body.composeBody
   };
-  Object.create(post);
+  //Object.create(post);
   posts.push(post);
   res.redirect("/");
 });
