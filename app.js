@@ -38,23 +38,14 @@ app.get("/compose", function(req, res){
 app.post("/compose", function(req, res){
   let postTitleTxt = req.body.composeTitle;
   let postBodyTxt = req.body.composeBody;
-  console.log("Post title: " + postTitleTxt + "Post body: " + postBodyTxt);
-
+//  console.log("Post title: " + postTitleTxt + "Post body: " + postBodyTxt);
+  const post ={
+    postTitleTxt: postTitleTxt,
+    postBodyTxt: postBodyTxt
+  };
+  Object.create(post);
+  console.log("Post text: " + post.postTitleTxt + " " + "Post body: " + post.postBodyTxt);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
