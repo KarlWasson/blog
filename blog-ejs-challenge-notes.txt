@@ -61,3 +61,12 @@ pass posts object to home route
 
 Challenge 13:
 Log titles in home route
+
+Challenge 14: 
+Add for each loop
+
+Challenge 15:
+add title and content to forEach loop
+
+Challenge 16:
+route parameters, long in console what ever comes after /post/[PRINT THIS]
