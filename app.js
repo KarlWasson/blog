@@ -64,15 +64,13 @@ app.post("/compose", function(req, res){
 app.get('/posts/:title', function (req, res) {
 
   // store route params as var
- const requestedTitle = req.params.title;
+  const requestedTitle = req.params.title;
 
-// array.forEach anon function
- posts.forEach(function(post){
+  // array.forEach anon function
+  posts.forEach(function(post){
    const postTitle = post.title;
-
        if(requestedTitle === postTitle){
-           console.log("Match Found");
-
+           console.log("Match Found!");
          }
      })
 })
