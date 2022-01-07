@@ -10,11 +10,11 @@ goto: localhost
 
 render home page, h1 that says home
 
-solution to challenge one: add h2, app.get and homepath. 
+solution to challenge one: add h2, app.get and homepath.
 
 CHALLENGE TWO:
 add content from server to homepage
-to render or pass data from server (app.js) to page, res.render(home, {key:value}); 
+to render or pass data from server (app.js) to page, res.render(home, {key:value});
 pass jsobject to home.ejs
 
 CHALLENGE THREE:
@@ -49,7 +49,7 @@ add post text box
 Challenge 10:
 Create javascript object called post that stores postBody and postTitle
 Create new jsobject
-made a new variable called post, add fields, Object.create, 
+made a new variable called post, add fields, Object.create,
 
 Challenge 11:
 put post object inside a global variable called posts, it's an array
@@ -62,7 +62,7 @@ pass posts object to home route
 Challenge 13:
 Log titles in home route
 
-Challenge 14: 
+Challenge 14:
 Add for each loop
 
 Challenge 15:
@@ -70,3 +70,8 @@ add title and content to forEach loop
 
 Challenge 16:
 route parameters, long in console what ever comes after /post/[PRINT THIS]
+
+Challenge 17:
+route parameters for posts route, log in console
+I refreshed route params,
+I should make more variables ie. let requestedTitle = req.params.postTitle
