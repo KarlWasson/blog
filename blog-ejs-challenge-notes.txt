@@ -75,3 +75,5 @@ Challenge 17:
 route parameters for posts route, log in console
 I refreshed route params,
 I should make more variables ie. let requestedTitle = req.params.postTitle
+Make var into const
+Use strict equity (===) because we are checking type = String and value
