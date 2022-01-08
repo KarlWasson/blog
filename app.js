@@ -4,8 +4,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 
-// const http = require("http");
-// const url = require("url");
+// Load the core build lodash.
+var _ = require('lodash');
 
 
 const aboutContent = "Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Mauris in aliquam sem fringilla. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Amet massa vitae tortor condimentum lacinia quis vel eros. Enim ut tellus elementum sagittis vitae. Mauris ultrices eros in cursus turpis massa tincidunt dui.";
@@ -64,13 +64,15 @@ app.post("/compose", function(req, res){
 app.get('/posts/:title', function (req, res) {
 
   // store route params as var
-  const requestedTitle = req.params.title;
+  const requestedTitle = _.lowerCase(req.params.title);
 
   // array.forEach anon function
   posts.forEach(function(post){
-   const postTitle = post.title;
+   const postTitle = _.lowerCase(post.title);
        if(requestedTitle === postTitle){
            console.log("Match Found!");
+         } else {
+           console.log("No Match Found.");
          }
      })
 })

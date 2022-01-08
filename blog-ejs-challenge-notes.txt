@@ -77,3 +77,6 @@ I refreshed route params,
 I should make more variables ie. let requestedTitle = req.params.postTitle
 Make var into const
 Use strict equity (===) because we are checking type = String and value
+
+Challenge 18:
+add no dash, clean strings with _lowerCase()
