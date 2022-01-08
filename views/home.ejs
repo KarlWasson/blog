@@ -4,7 +4,7 @@
 
 <% posts.forEach(function(post){ %>
   <% let title = post.title %>
-  <% let content = post.content %>
+  <% let content = post.content.substring(0,100) + '...'; %>
   <h3> <%= title %> </h3
   <p> <%= content %> </p>
 

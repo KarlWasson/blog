@@ -33,7 +33,7 @@ app.get('/', function(req, res){
     // const postTitleUrl = url.parse(req.url, true);
     // console.log("postTitleURL: " + postTitleUrl);
 });
-app.get('/posts', function(req, res){
+app.get('/post', function(req, res){
 
 });
 // add get for menu items
@@ -74,8 +74,6 @@ app.get('/post/:title', function (req, res) {
            res.render("post", {
              post: post
            });
-         } else {
-           console.log("No Match Found.");
          }
      })
 })
