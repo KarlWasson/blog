@@ -61,7 +61,7 @@ app.post("/compose", function(req, res){
   res.redirect("/");
 });
 
-app.get('/posts/:title', function (req, res) {
+app.get('/post/:title', function (req, res) {
 
   // store route params as var
   const requestedTitle = _.lowerCase(req.params.title);
@@ -71,6 +71,9 @@ app.get('/posts/:title', function (req, res) {
    const postTitle = _.lowerCase(post.title);
        if(requestedTitle === postTitle){
            console.log("Match Found!");
+           res.render("post", {
+             post: post
+           });
          } else {
            console.log("No Match Found.");
          }

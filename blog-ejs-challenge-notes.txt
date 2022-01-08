@@ -80,3 +80,7 @@ Use strict equity (===) because we are checking type = String and value
 
 Challenge 18:
 add no dash, clean strings with _lowerCase()
+
+Challenge 19:
+render post on post pages
+used render
