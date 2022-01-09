@@ -28,10 +28,8 @@ app.use(express.static("public"));
 app.get('/', function(req, res){
   res.render("home", {
     homeStartingContent: homeStartingContent,
-    posts: posts
+    posts: posts,
   });
-    // const postTitleUrl = url.parse(req.url, true);
-    // console.log("postTitleURL: " + postTitleUrl);
 });
 app.get('/post', function(req, res){
 
@@ -52,8 +50,11 @@ app.get("/compose", function(req, res){
 });
 
 app.post("/compose", function(req, res){
+  const lowerCasetitle = _.lowerCase(req.body.composeTitle);
+  const kebabTitle = _.kebabCase(lowerCasetitle);
   const post ={
     title: req.body.composeTitle,
+    postUrl: kebabTitle,
     content: req.body.composeBody
   };
   //Object.create(post);

@@ -5,8 +5,10 @@
 <% posts.forEach(function(post){ %>
   <% let title = post.title %>
   <% let content = post.content.substring(0,100) + '...'; %>
+  <% let url = "/post/" + post.postUrl %>
+  <% console.log(url); %>
   <h3> <%= title %> </h3
-  <p> <%= content %> </p>
+  <p> <%= content %><a href= <%= url %> >Read More</a> </p>
 
 <% }); %>
 
